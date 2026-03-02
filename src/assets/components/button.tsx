@@ -64,7 +64,7 @@ export default function Button({
   children,
   icon: IconComponent,
   ...props
-}): ButtonProps {
+}: ButtonProps) {
   return (
     <button
       className={ButtonVariants({ variant, size, disabled, className })}
