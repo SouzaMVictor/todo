@@ -2,6 +2,9 @@ import Text from "./assets/components/text";
 import TrashIcon from "./assets/icons/Trash-Regular.svg?react"
 import Pencil from "./assets/icons/PencilSimple-Regular.svg?react"
 import Icon from "./assets/components/icon";
+import Badge from "./assets/components/badge";
+import Button from "./assets/components/button";
+import PlusIcon from "./assets/icons/Plus-Regular.svg?react"
 
 export default function App() {
   return (
@@ -19,6 +22,15 @@ export default function App() {
       <div className="flex gap-1">
         <Icon svg={TrashIcon} className="fill-green-base"/>
         <Icon svg={Pencil} className="fill-green-base" animate />
+      </div>
+      <div>
+        <Badge variant="primary">5</Badge>
+        <Badge variant="secondary">2 de 5</Badge>
+      </div>
+      <div>
+        <Button icon={PlusIcon}>
+          Nova tarefa
+        </Button>
       </div>
     </div>
     </div>

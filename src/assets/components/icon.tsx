@@ -1,6 +1,7 @@
 import React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const iconVariants = cva("",{
     variants: {
         animate: {
