@@ -6,6 +6,7 @@ import Badge from "./assets/components/badge";
 import Button from "./assets/components/button";
 import PlusIcon from "./assets/icons/Plus-Regular.svg?react"
 import ButtonIcon from "./assets/components/button-icon";
+import InputText from "./assets/components/input-text";
 
 export default function App() {
   return (
@@ -39,6 +40,10 @@ export default function App() {
         <ButtonIcon icon={TrashIcon} variant="secondary" />
         <ButtonIcon icon={TrashIcon} variant="tertiary"/>
         <ButtonIcon icon={TrashIcon} />
+      </div>
+
+      <div>
+        <InputText />
       </div>
     </div>
     </div>
