@@ -1,6 +1,6 @@
 import { cva, type VariantProps } from "class-variance-authority";
 
-import CheckIcon from "../icons/Check-Regular.svg?react";
+import CheckIcon from "../assets/icons/Check-Regular.svg?react";
 import Icon from "./icon";
 import Skeleton from "./skeleton";
 // eslint-disable-next-line react-refresh/only-export-components

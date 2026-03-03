@@ -1,16 +1,16 @@
-import Text from "./assets/components/text";
+import Text from "./components/text";
 import TrashIcon from "./assets/icons/Trash-Regular.svg?react";
 import Pencil from "./assets/icons/PencilSimple-Regular.svg?react";
-import Icon from "./assets/components/icon";
-import Badge from "./assets/components/badge";
-import Button from "./assets/components/button";
+import Icon from "./components/icon";
+import Badge from "./components/badge";
+import Button from "./components/button";
 import PlusIcon from "./assets/icons/Plus-Regular.svg?react";
-import ButtonIcon from "./assets/components/button-icon";
-import InputText from "./assets/components/input-text";
-import InputCheckbox from "./assets/components/input-checkbox";
-import Card from "./assets/components/card";
-import Container from "./assets/components/container";
-import Skeleton from "./assets/components/skeleton";
+import ButtonIcon from "./components/button-icon";
+import InputText from "./components/input-text";
+import InputCheckbox from "./components/input-checkbox";
+import Card from "./components/card";
+import Container from "./components/container";
+import Skeleton from "./components/skeleton";
 
 export default function App() {
   return (
