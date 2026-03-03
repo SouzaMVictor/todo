@@ -1,6 +1,7 @@
 import { cva, type VariantProps } from "class-variance-authority";
 import React from "react";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const cardVariants = cva(
   `
     rounded-lg border border-solid border-gray-200

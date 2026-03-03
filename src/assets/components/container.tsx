@@ -1,10 +1,11 @@
 import { cva, type VariantProps } from "class-variance-authority";
 import React from "react";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const containerVariants = cva("mx-auto", {
   variants: {
     size: {
-      md: "max-w-[31.5rem] px-2",
+      md: "max-w-126 px-2",
     },
   },
   defaultVariants: {
