@@ -4,7 +4,7 @@ import React from "react";
 // eslint-disable-next-line react-refresh/only-export-components
 export const cardVariants = cva(
   `
-    rounded-lg border border-solid border-gray-200
+    rounded-lg border border-solid border-grey-200
     bg-white shadow-sm
   `,
   {
