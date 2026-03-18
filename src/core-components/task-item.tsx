@@ -6,8 +6,8 @@ import Text from "../components/text";
 
 import Pencil from "../assets/icons/PencilSimple-Regular.svg?react";
 import TrashIcon from "../assets/icons/Trash-Regular.svg?react";
-import PlusIcon from "../assets/icons/Plus-Regular.svg?react";
-import Spinner from "../assets/icons/spinner.svg?react";
+// import PlusIcon from "../assets/icons/Plus-Regular.svg?react";
+// import Spinner from "../assets/icons/spinner.svg?react";
 import Check from "../assets/icons/Check-Regular.svg?react";
 import X from "../assets/icons/X-Regular.svg?react";
 import InputText from "../components/input-text";

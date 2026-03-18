@@ -8,7 +8,7 @@ export default function TasksSummary(){
                 <Text variant="body-sm-bold" className="!text-grey-300">
                     Tarefas criadas
                 </Text>
-                <Badge variant="secondary">4</Badge>
+                <Badge variant="secondary">5</Badge>
             </div>
             <div className="flex items-center gap-2">
                 <Text variant="body-sm-bold" className="!text-grey-300">
