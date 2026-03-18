@@ -12,7 +12,7 @@ import Check from "../assets/icons/Check-Regular.svg?react";
 import X from "../assets/icons/X-Regular.svg?react";
 import InputText from "../components/input-text";
 
-import { Task, TaskState } from "../models/task";
+import { type Task, TaskState } from "../models/task";
 import { cx } from "class-variance-authority";
 import useTask from "../hooks/use-task";
 
@@ -26,7 +26,7 @@ export default function TaskItem({ task }: TaskItemProps) {
   );
 
   const [taskTitle, setTaskTitle] = React.useState(task.title || "");
-  const {updateTask} = useTask();
+  const {updateTask, updateTaskStatus} = useTask();
 
   function handleEditTask() {
     setIsEditing(true);
@@ -47,13 +47,19 @@ export default function TaskItem({ task }: TaskItemProps) {
     setIsEditing(false);
   }
 
+  function handleChangeTaskStatus(e: React.ChangeEvent<HTMLInputElement>){
+    const checked = e.target.checked;
+    console.log(checked)
+    updateTaskStatus(task.id, checked)
+  }
+
   return (
     <Card size="md">
       {!isEditing ? (
         <div className="flex items-center gap-4">
           <InputCheckbox
-            value={task.concluded?.toString()}
             checked={task?.concluded}
+            onChange={handleChangeTaskStatus}
           />
           <Text
             className={cx("flex-1", {

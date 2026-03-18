@@ -1,5 +1,5 @@
 import useLocalStorage from "use-local-storage";
-import { Task, TASKS_KEY, TaskState } from "../models/task";
+import { type Task, TASKS_KEY, TaskState } from "../models/task";
 
 export default function useTask() {
   const [tasks, setTasks] = useLocalStorage<Task[]>(TASKS_KEY, []);
@@ -20,8 +20,14 @@ export default function useTask() {
         task.id === id ? {...task, state: TaskState.Created, ...payload}: task
     ));
   }
+  function updateTaskStatus(id: string, concluded: boolean){
+    setTasks(
+      tasks.map((task) => task.id === id ? {...task, concluded}: task)
+    )
+  }
   return {
     prepareTask,
-    updateTask
+    updateTask,
+    updateTaskStatus
   };
 }
