@@ -4,7 +4,11 @@ import TaskItem from "./task-item";
 import UseTasks from "../hooks/use-tasks";
 import useTask from "../hooks/use-task";
 
-export default function TaskList() {
+interface TaskItemProps{
+  task: Task;
+}
+
+export default function TaskList({task}: TaskItemProps) {
   const { tasks } = UseTasks();
   const {prepareTask} = useTask()
   console.log(tasks);
@@ -20,10 +24,7 @@ export default function TaskList() {
         </Button>
       </section>
       <section className="space-y-2">
-        <TaskItem />
-        <TaskItem />
-        <TaskItem />
-        <TaskItem />
+        {tasks.map((task) => <TaskItem key={task.id} task={task}/>)}
       </section>
     </>
   );
